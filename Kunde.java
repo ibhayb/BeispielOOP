@@ -14,11 +14,9 @@ public class Kunde {
     }
 
     public boolean equals(Kunde kunde) {
-        // if (kunde.getId() == this.id) {
-        // return true;
-        // }
-        // return false;
-        return (kunde.getId() == this.id);
+
+        return (kunde.getId() == this.id && kunde.getNachname().equals(this.nachname)
+                && kunde.getVorname().equals(this.vorname));
     }
 
     public int getId() {
